@@ -477,3 +477,16 @@ footer .footer-below {
     border-radius: 50px;
     padding: 10px;
 }
+
+.demo{ 
+    fgColor:#18bc9c;
+    margin: 10px;
+}
+
+#contact{
+    background-color: #18bc9c;
+    color: white;
+}
+#contact hr{
+    background-color: #18bc9c;
+}
