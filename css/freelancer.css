@@ -458,3 +458,22 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.contact p {
+    display: block;
+    font-size: 2em;
+}
+
+.social-bookmarks{
+    font-size: 3em;
+    list-style: none;
+}
+
+.social-bookmarks li{
+    display: inline-block;
+    margin: 20px;
+    line-height: 45px;
+    border: 10px solid #18bc9c;
+    border-radius: 50px;
+    padding: 10px;
+}
