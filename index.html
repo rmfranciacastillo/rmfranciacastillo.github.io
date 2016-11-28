@@ -1,3 +1,8 @@
+<!-- 
+
+	Welcome curious stranger! If you wanted to check how I did this code or any portfolio check out my channel in livecoding.org called thecreativeprocess. Also you can check this and many more tutorials in my site: thecreativeprocess.co. If you want additional information, feel free to contact me at renato.francia@thecreativeprocess.co with the message title: "Hey I saw your code on github! {{ Anything else}}". I will NOT respond if this is not the title. Feel free to contact anytime. I love to chat 
+	about code, biz and creativity. Cheer! 
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +11,13 @@
 	<title>Creative Coding: A creative Bucket of code</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
 
+	<!-- 
+		TODO Navigation Sucks. Need to create responsive toolbar for mobile and Desktop. 
+	-->	
 	<!--Navigation -->
 	<header>
 		<!--Mobile Navigation -->
@@ -20,12 +27,10 @@
 		  <nav class="main-navigation" role="navigation">
 			<span class="nav-toggle">X</span>
 			<ul>
+				<li><a href="#">Portfolio</a></li>
 				<li><a href="#">News</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Tutorials</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Join us</a></li>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Contact</a></li>
 				<li>
 					<ul class="social-links">
 						<h5>Follow Us:</h5>
@@ -46,10 +51,10 @@
 			 <a class="navbar-brand" href="#">THE CREATIVE PROCESS</a>
 			<div class="nav navbar-nav pull-right">
 				<a class="nav-item nav-link active" href="#">News <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#">Services</a>
-				<a class="nav-item nav-link" href="#">About</a>
-				<a class="nav-item nav-link" href="#">Projects</a>
-				<a class="nav-item nav-link" href="#">Tutorials</a>
+				<a class="nav-item nav-link" href="#">Portfolio</a>
+				<a class="nav-item nav-link" href="#">News</a>
+				<a class="nav-item nav-link" href="#">About Me</a>
+				<a class="nav-item nav-link" href="#">Contact</a>
 			</div>
 		</nav>
 	</header>
@@ -58,6 +63,9 @@
 
 	<!--Simple example of ambient video -->
 
+	<!--
+		TODO: Create a random selection of background videos   
+	-->
 	<!-- Video Section -->
 	<section id="top" class="video-section">
 		<div class="pattern-overlay">
@@ -75,7 +83,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<h1 class="page-header-1">RENATO FRANCIA</h1>
-						<h3 class="page-header-3">Web Developer | Blogger </h3>
+						<h3 class="page-header-3">Web Developer | Blogger | Virtual Entrepreneur</h3>
 					</div>
 				</div><!-- End of row-->
 				<div class="row">
@@ -83,9 +91,10 @@
 						<ul id="social-bookmarks" class="list-inline">
 							<li><a target="_blank" class="btn-social btn-outline" href="https://www.facebook.com/bethecreativeprocess?fref=ts"><i class="fa fa-fw fa-facebook"></i></a></li>
 							<li><a target="_blank" class="btn-social btn-outline" href="https://plus.google.com/+RenatoFranciaCastillo/about" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a></li>
-							<li><a target="_blank" class="btn-social btn-outline" href="https://twitter.com/RenatoFranciaC"><i class="fa fa-fw fa-twitter"></i></a></li>
 							<li><a target="_blank" class="btn-social btn-outline" href="https://www.linkedin.com/in/renatofrancia"><i class="fa fa-fw fa-linkedin"></i></a></li>
-							<li><a target="_blank" class="btn-social btn-outline" href="https://www.pinterest.com/creative_pros/"><i class="fa fa-fw fa-pinterest"></i></a></li>
+							<li><a target="_blank" class="btn-social btn-outline" href="https://github.com/rmfranciacastillo"><i class="fa fa-fw fa-github"></i></a></li>
+							<li><a target="_blank" class="btn-social btn-outline" href="http://codepen.io/rmfranciacastillo/"><i class="fa fa-fw fa-codepen"></i></a></li>
+							<li><a target="_blank" class="btn-social btn-outline" href="https://twitter.com/RenatoFranciaC"><i class="fa fa-fw fa-twitter"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -94,6 +103,7 @@
 	</section>
 	<!-- End of Video Section-->
 
+	<!-- TODO  Portfolio is NOT responsive fix this! -->
 	<!-- Portfolio -->
 	<section class="content-section">
 		<div class="tagline inverse">
@@ -105,19 +115,18 @@
 					<a href="img/concordacademy-org-full.jpg"
 					   data-lightbox="projects"
 				   	   data-title="Concord Academy"
-					   data-desc="Helped convert HTML files into WordPress<br><br>
-					   Languages: HTML5, CSS3, Foundation <br>
-					   Plugins: PODS, Advanced Custom Fields<br>
+					   data-desc="Helped convert HTML files into highly flexible WordPress theme<br><br>
+					   Languages: HTML5, CSS3, Javascript, Foundation <br>
+					   Plugins: PODS (Advanced Content Types), Advanced Custom Fields<br>
 					   Themes: Sage Starter theme <br>
-					   Operating System: CentOS<br>
-					   Tools: git, Gulp, BrowserSync, Trumba, Wistia Video<br>">
+					   Tools: bash, git, Gulp, BrowserSync, Trumba, Wistia Video<br>">
 						<img src="img/concordacademy-org.jpg" alt="Concord Academy Website">
 					</a>
 				</li>
 				<li class="design">
 					<a href="img/thecreativeprocess-full.jpg"
 					   data-lightbox="projects"
-				   	   data-title="Concord Academy"
+				   	   data-title="The Creative Process"
 					   data-desc="Project about concord Academy">
 						<img src="img/thecreativeprocess.jpg" alt="The Creative Process">
 					</a>
