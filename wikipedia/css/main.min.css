@@ -1,0 +1,251 @@
+/*********************
+  Theme Colors
+ *********************/
+/**************
+   GLOBAL
+   ***********/
+body {
+  font-weight: 100px;
+  font-family: 'Droid Serif', Georgia, 'Times New Roman', serif;
+  background-color: #669999;
+  font-size: 16px; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-weight: 700;
+  font-size: 100px;
+  margin-bottom: 10px;
+  font-family: 'Maven Pro', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold; }
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 'Maven Pro', Arial, sans-serif;
+  font-style: italic; }
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 16px; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 90%;
+  color: #FFFFFF;
+  background-color: #226666;
+  border: 10px solid #226666;
+  border-radius: 5px; }
+  .wrapper img {
+    margin: 20px; }
+  .wrapper h2 {
+    position: relative;
+    top: 20px;
+    font-size: 1.8rem; }
+  .wrapper p {
+    position: relative;
+    top: 20px; }
+  .wrapper footer {
+    margin-top: 80px; }
+  .wrapper .row {
+    clear: both;
+    padding: 20px 0; }
+
+::-moz-selection {
+  background-color: #003333; }
+
+::selection {
+  background-color: #003333; }
+
+/**************
+   Items
+   ***********/
+.header-1 {
+  font-size: 3rem;
+  padding: 20px; }
+
+.extra-space {
+  padding: 5px;
+  margin: 30px 0px; }
+
+/**************
+  Form
+   ***********/
+input[type="text"] {
+  width: 300px;
+  border: 2px solid #226666;
+  border-radius: 5px;
+  height: 35px; }
+
+input[type="text"]:focus {
+  border: 4px solid #003333;
+  border-radius: 5px;
+  transition: 0.25s all linear;
+  width: 400px; }
+
+/****************************
+    Modular Action
+  **************************/
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.bold {
+  font-weight: bold; }
+
+.hidden {
+  display: none; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.text-center {
+  text-align: center; }
+
+/*********************
+  Theme Colors
+ *********************/
+/****************
+   Modal
+ ****************/
+.modal {
+  color: #226666;
+  display: none;
+  width: 40%;
+  margin: 0 auto;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 15px #000;
+  -moz-box-shadow: 0 0 15px #000;
+  -o-box-shadow: 0 0 15px #000;
+  box-shadow: 0 0 15px #000;
+  border-radius: 15px;
+  overflow: hidden; }
+
+.modal .close-modal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline; }
+
+.modal h2 {
+  background: #226666;
+  color: #fff;
+  padding: 10px; }
+
+.modal ul {
+  padding: 10px 30px 30px 30px; }
+
+/****************
+ Buttons
+ ****************/
+.button {
+  border: 2px solid #333;
+  color: #333;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: all .25s linear;
+  -moz-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+  transform: scale(0.9, 0.9); }
+
+.button:focus,
+.button:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-transform: scale(1, 1) translate(0, -5px);
+  -moz-transform: scale(1, 1) translate(0, -5px);
+  -ms-transform: scale(1, 1) translate(0, -5px);
+  transform: scale(1, 1) translate(0, -5px); }
+
+.button-narrow {
+  width: 25%; }
+
+.button-inline {
+  display: inline-block; }
+
+.button-alt {
+  color: #fff;
+  border-color: #fff; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
