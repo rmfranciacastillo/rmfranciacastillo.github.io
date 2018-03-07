@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Gulp Sass</title>
-    <link href="img/logo.png" rel="icon" type="image/png">
+    <link href="img/favicon.png" rel="icon" type="image/png">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -25,13 +25,13 @@
 
 		<!-- Main Navigation --> 
         <nav class="main-nav ">
-            <span class="logo "><h3>LOGO</h3></span>
+            <span class="logo "><h3>RENATO FRANCIA</h3></span>
             <ul class="main-menu ">
-                <li class="menu-item"><a href="services.html">Services</a></li>
-                <li class="menu-item"><a href="work.html">Work</a></li>
-                <li class="menu-item"><a href="about.html">About Me</a></li>
-                <li class="menu-item"><a href="blog.html">Blog</a></li>
-                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                <li class="menu-item"><a href="#services">Services</a></li>
+                <li class="menu-item"><a href="#work">Work</a></li>
+                <li class="menu-item"><a href="#about">About Me</a></li>
+                <li class="menu-item"><a href="#blog">Blog</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 		
@@ -41,13 +41,14 @@
           <nav class="main-navigation" id="mobile-menu" role="navigation">
             <span class="nav-toggle" id="mobile-close">X</span>
             <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#news">News</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
                     <ul class="social-links">
-                        <h5>Follow Us:</h5>
+                        <h5>Follow Me:</h5>
                         <li><a htarget="_blank" ref="https://www.facebook.com/The.Creative.Process.Be.Creative"><i class="fa fa-facebook-official"></i></a></li>
                         <li><a htarget="_blank" ref="https://twitter.com/RenatoFranciaC"><i class="fa fa-twitter-square"></i></a></li>
                         <li><a htarget="_blank" ref="https://www.instagram.com/renatofrancia/"><i class="fa fa-instagram"></i></a></li>
@@ -61,63 +62,81 @@
         </div>
 
         <div class="header-content text-md-center">
-            <h1>Welcome Everyone</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus perferendis necessitatibus numquam amet impedit explicabo? Debitis quasi ullam aperiam!</p>
-        <a class="btn">Find Out More</a>
+            <h1>Renato Francia</h1>
+            <p>Welcome to my little bucket of code. Here I put my current projects and talk about code.</p>
+        <a class="btn" href="#work">Try my projects</a>
         </div>
     </header>
 
 	<!--Section  --> 
-	<section class="section is-centered">
+	<section class="section is-centered" id="services">
         <div class="container">
-            <h2>Sit maxime suscipit <span class="is-bold">bold stuff</span> obcaecati debitis sint deleniti non. Fuga quis? </h2>
+            <h2>My name is <span class="is-bold">Renato Francia</span> and I've been a professional software developer since 2012. From simple site setup in Drupal to building web applications from scratch using the MEAN stack, I'm used to work in high-paced enviroments and love every moment of it! As a tech enthusiast I always aim to improve myself which has allowed me to provide my clients with the following. </h2>
         	<ul class="iconbox-list">
         		<li class="iconbox-item">
 					<i class="fa fa-code"></i>
-					<h3>Development</h3>
-					<p>quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+					<h3>Front-End</h3>
+					<p>I've worked on Fron-End technologies such as Bootstrap, Foundation, CSS grid and Angular 5 </p>
 				</li>
         		<li class="iconbox-item">
 					<i class="fa fa-terminal"></i>
-					<h3>Deployment</h3>
-					<p>quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+					<h3>Back-End</h3>
+					<p>You can't have a great app without logic. I've worked on NodeJs, PHP, MySQL and MongoDB</p>
 				</li>
         		<li class="iconbox-item">
 					<i class="fa fa-cloud"></i>
-					<h3>Cloud</h3>
-					<p>quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+					<h3>Deployment</h3>
+					<p>Finally, a great app needs a home to run. For this I used Heroku, AWS and Linux-based Distros</p>
 				</li>
         	</ul>
-        	<a class="btn">Find Out More</a>
 		</div>
     </section>
 	
 	<!-- Section Alt-->	
-	<section class="section-alt is-centered">
+	<section class="section-alt is-centered" id="work">
         <div class="container">
-            <h2>Sit maxime suscipit <span class="is-bold">bold stuff</span> obcaecati debitis sint deleniti non. Fuga quis? </h2>
+			<h2 class="is-bold">WEB APPS</h2>
         	<ul class="iconbox-list">
         		<li class="iconbox-item">
-					<i class="fa fa-code"></i>
+					<a target="_blank"href="https://codepen.io/rmfranciacastillo/full/NGBaxJ/"><img src="img/twitter.png" alt="User Profile"></a>
+					<h3>Random Quote Generator</h3>
+					<p>Generates a random quote and allows to tweet it. Uses Bootstrap, VanillaJS.</p>
+				</li>
+        		<li class="iconbox-item">
+					<a target="_blank" href="/weather"><img src="img/weather.jpg" alt="User Profile"></a>
+					<h3>Weather App</h3>
+					<p>A simple weather App that uses a location and Open weather API to tell the time</p>
+				</li>
+        		<li class="iconbox-item">
+					<a target="_blank" href="/wikipedia/"><img src="img/wikipedia.png" alt="User Profile"></a>
+					<h3>Wikipedia Searcher</h3>
+					<p>A searcher using Wikipedia public API and CORS. Uses AJAX, VanillaJS</p>
+				</li>
+        	</ul>
+		</div>
+        <div class="container">
+        	<ul class="iconbox-list">
+        		<li class="iconbox-item">
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
 					<h3>Development</h3>
 					<p>Dolor voluptate consequuntur adipisci qui quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
 				</li>
         		<li class="iconbox-item">
-					<i class="fa fa-terminal"></i>
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
 					<h3>Deployment</h3>
 					<p>Dolor voluptate consequuntur adipisci qui quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
 				</li>
         		<li class="iconbox-item">
-					<i class="fa fa-cloud"></i>
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
 					<h3>Cloud</h3>
 					<p>Dolor voluptate consequuntur adipisci qui quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
 				</li>
         	</ul>
-        	<a class="btn-alt">Find Out More</a>
 		</div>
     </section>
- 
-	<section class="section section-bg-image">
+
+	<!-- Section Image -->
+	<section class="section section-bg-image" id="about">
 		<div class="container">
 			<div class="l-row">
 				<div class="l-col-6">
@@ -151,15 +170,48 @@
 			</div>
 		</div>
 	</section>
-
-
+	
+	<!--Section  --> 
+	<section class="section is-centered" id="blog">
+        <div class="container">
+        	<ul class="iconbox-list">
+        		<li class="iconbox-item">
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
+					<h3>Renato Francia</h3>
+					<h4>Software Developer</h4>
+					<p>Amet quas facilis porro ducimus esse, voluptatibus Dolorem molestiae alias voluptas vitae quae nam Velit</p>
+					
+				</li>
+        		<li class="iconbox-item">
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
+					<h3>Renato Francia</h3>
+					<h4>Software Developer</h4>
+					<p>Amet quas facilis porro ducimus esse, voluptatibus Dolorem molestiae alias voluptas vitae quae nam Velit</p>
+				</li>
+        		<li class="iconbox-item">
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
+					<h3>Renato Francia</h3>
+					<h4>Software Developer</h4>
+					<p>Amet quas facilis porro ducimus esse, voluptatibus Dolorem molestiae alias voluptas vitae quae nam Velit</p>
+				</li>
+        		<li class="iconbox-item">
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
+					<h3>Renato Francia</h3>
+					<h4>Software Developer</h4>
+					<p>Amet quas facilis porro ducimus esse, voluptatibus Dolorem molestiae alias voluptas vitae quae nam Velit</p>
+				</li>
+        	</ul>
+		</div>
+    </section>
+	
     <script src="js/lib.min.js"></script>
 	<!-- inject:js -->
-	<script src="js/about.min.js"></script>
 	<script src="js/lib.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/otherjs/stuff.js"></script>
 	<!-- endinject -->
 
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </body>
 </html>
