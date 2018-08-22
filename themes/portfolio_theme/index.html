@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gulp Sass</title>
+    <link href="img/logo.png" rel="icon" type="image/png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/lib.min.css">
+	<!-- inject:css -->
+	<link rel="stylesheet" href="css/index.css">
+	<!-- endinject -->
+
+</head>
+<body>
+    <header class="l-header container is-centered">
+		<!-- Background Video --> 
+        <div class="fullscreen-video-wrap">
+            <video src="video/code.mp4" autoplay="true" loop="true"></video>
+        </div>
+        <div class="header-overlay"></div>
+
+		<!-- Main Navigation --> 
+        <nav class="main-nav ">
+            <span class="logo "><h3>LOGO</h3></span>
+            <ul class="main-menu ">
+                <li class="menu-item"><a href="services.html">Services</a></li>
+                <li class="menu-item"><a href="work.html">Work</a></li>
+                <li class="menu-item"><a href="about.html">About Me</a></li>
+                <li class="menu-item"><a href="blog.html">Blog</a></li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+		
+	   <!--Mobile Navigation -->
+       <div class="mobile-navigation ">
+          <i class="fa fa-bars nav-toggle" id="mobile-open"></i>
+          <nav class="main-navigation" id="mobile-menu" role="navigation">
+            <span class="nav-toggle" id="mobile-close">X</span>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <ul class="social-links">
+                        <h5>Follow Us:</h5>
+                        <li><a htarget="_blank" ref="https://www.facebook.com/The.Creative.Process.Be.Creative"><i class="fa fa-facebook-official"></i></a></li>
+                        <li><a htarget="_blank" ref="https://twitter.com/RenatoFranciaC"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a htarget="_blank" ref="https://www.instagram.com/renatofrancia/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a htarget="_blank" ref="https://www.linkedin.com/in/renatofrancia"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a htarget="_blank" ref="https://github.com/rmfranciacastillo"><i class="fa fa-github-square"></i></a></li>
+                        <li><a htarget="_blank" ref="http://www.thecreativeprocess.co"><i class="fa fa-globe"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-content text-md-center">
+            <h1>Welcome Everyone</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus perferendis necessitatibus numquam amet impedit explicabo? Debitis quasi ullam aperiam!</p>
+        <a class="btn">Find Out More</a>
+        </div>
+    </header>
+
+	<section class="section is-centered">
+        <div class="container">
+            <h2>Sit maxime suscipit <span class="is-bold">bold stuff</span> obcaecati debitis sint deleniti non. Fuga quis? </h2>
+        	<ul class="iconbox-list">
+        		<li class="iconbox-item">
+					<i class="fa fa-code"></i>
+					<h3>Development</h3>
+					<p>quae ccupiditate Unde vel laudantium cupiditate Unde vel laudantium cupiditate Unde vel laudantium upiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+				</li>
+        		<li class="iconbox-item">
+					<i class="fa fa-terminal"></i>
+					<h3>Deployment</h3>
+					<p>quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+				</li>
+        		<li class="iconbox-item">
+					<i class="fa fa-cloud"></i>
+					<h3>Cloud</h3>
+					<p>quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+				</li>
+        	</ul>
+		</div>
+		<button class="btn">Find Out More</button>
+    </section>
+	
+	<section class="section-alt is-centered">
+        <div class="container">
+            <h2>Sit maxime suscipit <span class="is-bold">bold stuff</span> obcaecati debitis sint deleniti non. Fuga quis? </h2>
+        	<ul class="iconbox-list">
+        		<li class="iconbox-item">
+					<i class="fa fa-code"></i>
+					<h3>Development</h3>
+					<p>Dolor voluptate consequuntur adipisci qui quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+				</li>
+        		<li class="iconbox-item">
+					<i class="fa fa-terminal"></i>
+					<h3>Deployment</h3>
+					<p>Dolor voluptate consequuntur adipisci qui quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+				</li>
+        		<li class="iconbox-item">
+					<i class="fa fa-cloud"></i>
+					<h3>Cloud</h3>
+					<p>Dolor voluptate consequuntur adipisci qui quae cupiditate Unde vel laudantium velit quibusdam ad Saepe corporis molestias porro pariatur deleniti nesciunt?</p>
+				</li>
+        	</ul>
+        	<a class="btn-alt">Find Out More</a>
+		</div>
+    </section>
+	
+	<section class="section section-bg-image">
+		<div class="container">
+			<div class="l-row">
+				<div class="l-col-6">
+					<ol class="l-iconlist">
+						<li class="l-iconlist-item">
+							<i class="fa fa-instagram"></i>
+							<div>
+								<h1 class="l-iconlist-header"><span>Step 1.</span> Planning & Strategy</h1>  
+								<p class="l-iconlist-body">omnisfacere dolorem, eum? Saepe quis esse animi nobis!</p>
+							</div>
+						</li>
+						<li class="l-iconlist-item">
+							<i class="fa fa-cloud"></i>
+							<div>
+								<h1 class="l-iconlist-header"><span>Step 2.</span> Planning & Strategy</h1>  
+								<p class="l-iconlist-body">laborum architecto voluptate voluptas? Eaque.</p>
+							</div>
+						</li>
+						<li class="l-iconlist-item">
+							<i class="fa fa-twitter"></i>
+							<div>
+								<h1 class="l-iconlist-header"><span>Step 3.</span> Planning & Strategy</h1>  
+								<p class="l-iconlist-body">excepturi adipisci facilis Nihil eligendi repellat mollitia illum</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div class="l-col-6">
+					<img class="img-responsive" src="img/phone-image.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section is-centered">
+        <div class="container">
+        	<ul class="iconbox-list">
+        
+				<li class="iconbox-item">
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
+					<h3>Blog Title</h3>
+					<h4>August 10, 2018</h4>
+					<p>Amet quas facilis porro ducimus esse, voluptatibus Dolorem molestiae alias voluptas vitae quae nam Velit</p>
+					
+				</li>
+				<li class="iconbox-item">
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
+					<h3>Blog Title</h3>
+					<h4>August 10, 2018</h4>
+					<p>Amet quas facilis porro ducimus esse, voluptatibus Dolorem molestiae alias voluptas vitae quae nam Velit</p>
+					
+				</li>
+				<li class="iconbox-item">
+					<img src="https://d1qb2nb5cznatu.cloudfront.net/users/1057861-large?1481133055" alt="User Profile">
+					<h3>Blog Title</h3>
+					<h4>August 10, 2018</h4>
+					<p>Amet quas facilis porro ducimus esse, voluptatibus Dolorem molestiae alias voluptas vitae quae nam Velit</p>
+					
+				</li>
+			</ul>
+		</div>
+    </section>
+	
+	<section class="section section-bg-image-2">
+        <div class="container">
+			<h2>What Clients Say</h2>
+
+			<div class="slider">
+				<input id="i1" type="radio" name="slider" checked>
+				<input id="i2" type="radio" name="slider">
+				<input id="i3" type="radio" name="slider">
+				<div id="one" class="slide">
+					<img 
+						src="https://avatars1.githubusercontent.com/u/6486733?s=460&v=4" 
+						alt="Slider Image">
+					<h2>Renato Francia</h2>
+					<h6>Software Developer</h6>
+					<blockquote>Excepturi Voluptatum ex ea numquam sed </blockquote>
+				</div>
+				<div id="two" class="slide">
+					<img 
+						src="https://avatars1.githubusercontent.com/u/6486733?s=460&v=4" 
+						alt="Slider Image">
+					<h2>Mauricio Francia</h2>
+					<h6>Software Developer</h6>
+					<blockquote>Adipisicing quo dolorem iste alias aspernatur accusantium ducimus, excepturi Voluptatum ex ea numquam sed </blockquote>
+				</div>
+				<div id="three" class="slide">
+					<img 
+						src="https://avatars1.githubusercontent.com/u/6486733?s=460&v=4" 
+						alt="Slider Image">
+					<h2>Art Vandalay</h2>
+					<h6>Software Developer</h6>
+					<blockquote>Adipisicing quo dolorem iste alias aspernatur accusantium </blockquote>
+				</div>
+				<div class="selectors">
+					<label id="s1" class="slider-selector" for="i1"></label>
+					<label id="s2" class="slider-selector" for="i2"></label>
+					<label id="s3" class="slider-selector" for="i3"></label>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section section-bg-image-3">
+        <div class="container">
+				<div class="contact-form">
+					<h2>Subscribe to Our Newsletter</h2>
+					<p>Consectetur error nisi amet doloremque ex? Fugiat voluptate quis quos aut rem Deserunt ullam velit</p>
+					<input type="text" placeholder="Enter Your Email Here">
+					<button class="btn btn-main">SUBSCRIBE NOW</button>
+				</div>
+		</div>
+	</section>
+
+	<footer>
+
+		<div class="left-footer">
+			<h1>RENATO FRANCIA</h1>
+			<ul class="social-links">
+				<li><i class="fa fa-facebook"></i></li>
+				<li><i class="fa fa-twitter"></i></li>
+				<li><i class="fa fa-github"></i></li>
+				<li><i class="fa fa-linkedin"></i></li>
+			</ul>
+
+		</div>
+		<div class="middle-footer">
+			<h3>LATEST NEWS</h3>
+			<ul class="latest-news">
+				<li>
+					<div class="date">05/15/2018</div>
+					<p>Consectetur provident libero adipisicing sed porro Eveniet similique.</p>
+				</li>
+				<li>
+					<div class="date">05/15/2018</div>
+					<p>Ipsum earum similique neque iste eveniet?</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="right-footer is-text-center">
+			<h3>NEWSLETTER</h3>
+			<p>Amet ducimus quidem at nihil dolore Ipsum repellendus mollitia reprehenderit exercitationem voluptatibus. Non earum deserunt laudantium repellat eveniet</p>
+			
+			<div class="form-subscription">
+				<span class="subscription-icon"><i class="fa fa-envelope"></i></span>
+				<input type="text" placeholder="Enter your E-Mail"> 
+				<button class="btn btn-main">SUBSCRIBE</button>
+			</div>
+		</div>
+
+		<div class="copyright">Web Developer &copy; 2018 </div>
+	</footer>
+
+    <script src="js/lib.min.js"></script>
+	<!-- inject:js -->
+	<script src="js/lib.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/otherjs/stuff.js"></script>
+	<!-- endinject -->
+
+</body>
+</html>

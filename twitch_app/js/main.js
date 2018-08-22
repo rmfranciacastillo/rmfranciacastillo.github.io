@@ -1,1 +1,0 @@
-console.log("starting scripts"),$.getJSON("https://api.twitch.tv/kraken/streams/freecodecamp?callback=?",function(t){console.log("Calling the API!"),console.log(t)});

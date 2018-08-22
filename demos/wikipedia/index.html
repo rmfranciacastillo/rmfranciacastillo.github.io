@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="wrapper ">
+		<div class="row " >
+			<h1 class="header-1 text-center">FCC WIKIMANIA</h1>
+		</div>
+		<div class="row text-center extra-space">
+			<div class="inline-block">
+				<form class="inline-block" id="wiki_form" > 
+					<input type="text" id="query" name="wiki_search" value ='' placeholder="Search Wiki"> 
+					<input type="submit" name="submit" value ="Search">
+				</form>
+			</div>	
+			<a href="https://en.wikipedia.org/wiki/Special:Random"><div class="button button-narrow button-inline">Random</div></a>
+		</div>
+
+		<!-- Entering the content-->
+		<content id="results" class="hidden">
+			<div class="row">
+				<figure class="float-left"><img src="https://placeholdit.imgix.net/~text?txtsize=22&txt=150%C3%97150&w=150&h=150" alt=""></figure>
+				<h2>Some Title</h2>
+				<p>Ipsum quam odit itaque provident quibusdam natus eius rem vitae facilis fuga doloremque deserunt. Earum officiis deserunt voluptatibus quisquam </p>
+			</div>
+		</content><!-- End of Content --> 		
+		<footer class="clear text-center">
+			<small>© Copyright 2016, Renato Francia</small>
+		</footer>
+
+	</div><!-- End of wrapper --> 
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>
