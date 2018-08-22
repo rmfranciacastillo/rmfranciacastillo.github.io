@@ -441,6 +441,11 @@ body {
 /* ==|====================
   Layout/Footer
  @mixin ====================== */
+
+a{
+	color: #ffffff;
+}
+
 footer {
   width: 100%;
   display: grid;
@@ -542,6 +547,7 @@ footer {
         background: #ffe0cc;
         color: #ff6200; }
     .main-navigation ul .social-links a {
+	  color: #ffffff;
       margin: 0;
       padding: 0; }
     .main-navigation ul .social-links h5 {
@@ -895,6 +901,7 @@ footer {
   flex-direction: row;
   margin-top: 25px; }
   .social-links li {
+  	color: white;
     min-width: 50px;
     font-size: 16px;
     padding: 12px;

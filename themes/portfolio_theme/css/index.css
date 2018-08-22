@@ -316,7 +316,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .fullscreen-video-wrap {
-    background: url(../../img/background.jpg);
+    background: url(../img/background.jpg);
     background-size: cover; }
     .fullscreen-video-wrap video {
       display: none; }
@@ -386,7 +386,7 @@ body {
 
 .section-bg-image:after {
   content: ' ';
-  background: url("../../img/background.jpg") center center;
+  background: url("../img/background.jpg") center center;
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -399,12 +399,12 @@ body {
   z-index: -1; }
 
 .section-bg-image-2 {
-  background: url("../../img/bg-02-1920x730.jpg");
+  background: url("../img/bg-02-1920x730.jpg");
   color: #ffffff;
   background-attachment: fixed; }
 
 .section-bg-image-3 {
-  background: url("../../img/bg-03-1920x546.jpg");
+  background: url("../img/bg-03-1920x546.jpg");
   color: #ffffff;
   background-size: cover;
   background-attachment: fixed; }
