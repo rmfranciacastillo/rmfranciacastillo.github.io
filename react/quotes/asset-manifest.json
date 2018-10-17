@@ -1,10 +1,10 @@
 {
-  "runtime~main.js": "/quotes/static/js/runtime~main.7a8b6e25.js",
-  "runtime~main.js.map": "/quotes/static/js/runtime~main.7a8b6e25.js.map",
-  "vendors.js": "/quotes/static/js/vendors.d9122354.chunk.js",
-  "vendors.js.map": "/quotes/static/js/vendors.d9122354.chunk.js.map",
-  "main.css": "/quotes/static/css/main.931f6b55.chunk.css",
-  "main.js": "/quotes/static/js/main.7dbe131b.chunk.js",
-  "main.js.map": "/quotes/static/js/main.7dbe131b.chunk.js.map",
-  "index.html": "/quotes/index.html"
+  "runtime~main.js": "./static/js/runtime~main.9518cc10.js",
+  "runtime~main.js.map": "./static/js/runtime~main.9518cc10.js.map",
+  "vendors.js": "./static/js/vendors.d9122354.chunk.js",
+  "vendors.js.map": "./static/js/vendors.d9122354.chunk.js.map",
+  "main.css": "./static/css/main.931f6b55.chunk.css",
+  "main.js": "./static/js/main.bcfc98c7.chunk.js",
+  "main.js.map": "./static/js/main.bcfc98c7.chunk.js.map",
+  "index.html": "./index.html"
 }
