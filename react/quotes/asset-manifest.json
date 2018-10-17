@@ -1,0 +1,10 @@
+{
+  "runtime~main.js": "/quotes/static/js/runtime~main.7a8b6e25.js",
+  "runtime~main.js.map": "/quotes/static/js/runtime~main.7a8b6e25.js.map",
+  "vendors.js": "/quotes/static/js/vendors.d9122354.chunk.js",
+  "vendors.js.map": "/quotes/static/js/vendors.d9122354.chunk.js.map",
+  "main.css": "/quotes/static/css/main.931f6b55.chunk.css",
+  "main.js": "/quotes/static/js/main.7dbe131b.chunk.js",
+  "main.js.map": "/quotes/static/js/main.7dbe131b.chunk.js.map",
+  "index.html": "/quotes/index.html"
+}
