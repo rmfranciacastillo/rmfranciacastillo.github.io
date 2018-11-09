@@ -1,0 +1,66 @@
+svg {
+	display: block;
+}
+
+svg.legend-container {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.dataviz-links {
+	width: 50%;
+	margin: 0 auto;
+	list-style: none;
+}
+
+.dataviz-links > li{
+	display: inline-block;
+}
+
+.dataviz-links > li::after{
+	content: ' | ';
+}
+
+.dataviz-links > li > a {
+	text-decoration: none;
+}
+
+
+rect {
+	stroke: white;
+	opacity: 0.3;
+	stroke-width: 2px;
+}
+
+.node {
+	fill: steelblue;
+	stroke: none;
+}
+
+.link {
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 1px;
+}
+
+text {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.title {
+	font-size: 2.3rem;
+	color: black;
+}
+
+div.tooltip{
+	position: absolute;
+	padding: 10px;
+	font: 12px sans-serif;
+	background: lightsteelblue;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+
