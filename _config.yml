@@ -1,0 +1,26 @@
+theme: jekyll-theme-cayman
+baseurl: /
+exclude: ['README.md'] 
+permalink: pretty
+highlighter: rouge
+
+collections: 
+    webapps:
+        output: true
+        permalink: /webapps/:path
+
+    websites:
+        output: true
+        permalink: /websites/:path
+
+    projects:
+        output: true
+        permalink: /projects/:path
+
+    clients:
+        output: true
+        permalink: /clients/:path
+
+    blog:
+        output: true
+        permalink: /blog/:path

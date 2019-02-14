@@ -1,378 +1,285 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: default
+title: Renato Francia - Homepage
+meta: Welcome to my portfolio where I code and write about creativity, technology and entrepreneurship
+priority: 1.0
+---
 
-    <title>Renato Francia | My little Bucket of Code</title>
-    <link href="img/favicon.png" rel="icon" type="image/png">
+<!-- Description Section  --> 
+<section class="section is-centered" id="services">
+	<div class="container">
+		<h2>My name is <span class="is-bold">Renato Francia</span> and I've been a professional software developer since 2012. From simple site setup in Drupal to building web applications from scratch using the MEAN stack, I'm used to work in high-paced enviroments and love every moment of it! As a tech enthusiast I always aim to improve myself which has allowed me to provide my clients with the following. </h2>
+		<ul class="iconbox-list">
+			<li class="iconbox-item">
+				<i class="fa fa-code"></i>
+				<h3>Front-End</h3>
+				<p>I've worked on Fron-End technologies such as Bootstrap, Foundation, CSS grid and Angular</p>
+			</li>
+			<li class="iconbox-item">
+				<i class="fa fa-terminal"></i>
+				<h3>Back-End</h3>
+				<p>You can't have a great app without logic. I've worked on NodeJs, PHP, MySQL and MongoDB</p>
+			</li>
+			<li class="iconbox-item">
+				<i class="fa fa-cloud"></i>
+				<h3>Deployment</h3>
+				<p>Finally, a great app needs a home to run. For this I used Heroku, AWS and Linux-based Distros</p>
+			</li>
+		</ul>
+	</div>
+</section>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/lib.min.css">
-	<!-- inject:css -->
-	<link rel="stylesheet" href="css/index.css">
-	<!-- endinject -->
 
 
-	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7b6414fb8788cbfb9f36300db/4135933d40e19d71353a9b0a1.js");</script>
 
-</head>
-<body>
-    <header class="l-header container is-centered">
-		<!-- Background Video --> 
-        <div class="fullscreen-video-wrap">
-            <video src="video/code.mp4" autoplay="true" loop="true"></video>
-        </div>
-        <div class="header-overlay"></div>
+<!-- Section Alt-->	
+<section class="section-alt is-centered" id="work">
+	<div class="container">
+		<h2 class="is-bold">WEB APPS</h2>
+		<ul class="iconbox-list">
+			<li class="iconbox-item">
+				<a target="_blank" href="/react/quotes">
+					<img src="/img/quote-logo.jpeg" alt="quote generator">
+				</a> 
+				<h3>Quote App</h3>
+				<p>A simple React + Redux app that calls an API that requests quotes and allows you to tweet the results</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="https://codepen.io/rmfranciacastillo/full/RWXbNj/">
+					<img src="img/calculator.jpg" alt="Calculator">
+				</a>
+				<h3>Calculator</h3>
+				<p>A simple calculator app that calculates simple operations using eval parser and VanillaJS</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="/games/tic-tac-toe/">
+					<img src="img/star-wars.jpg" alt="tic-tac-toe">
+				</a>
+				<h3>Star Wars Tic-Tac-Toe</h3>
+				<p>A simple Tic-Tac-Toe game with a Star Wars inspired template. Use AJAX and template views </p>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<ul class="iconbox-list">
+			<li class="iconbox-item">
+				<a target="_blank" href="/games/flappy">
+					<img src="img/flappy.jpg" alt="Flappy Bird">
+				</a>
+				<h3>Flappy Bird</h3>
+				<p>Flappy bird clone made out of HTML5 canvas</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="/react/drum-machine">
+					<img src="img/drum-machine.png" alt="Drum Machine">
+				</a>
+				<h3>Drum Machine</h3>
+				<p>A drum machine built on React + Redux</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="/demos/wikipedia/">
+					<img src="img/wikipedia.png" alt="Wikipedia App">
+				</a>
+				<h3>Wikipedia Searcher</h3>
+				<p>A searcher using Wikipedia public API and CORS. Uses AJAX, VanillaJS</p>
+			</li>
+		</ul>
+	</div>
+</section>
 
-		<!-- Main Navigation --> 
-        <nav class="main-nav ">
-            <span class="logo "><h3>RENATO FRANCIA</h3></span>
-            <ul class="main-menu ">
-                <li class="menu-item"><a href="#services">Services</a></li>
-                <li class="menu-item"><a href="#work">Work</a></li>
-                <li class="menu-item"><a href="#about">About Me</a></li>
-                <li class="menu-item"><a href="#projects">Projects</a></li>
-                <li class="menu-item"><a href="#blog">Blog</a></li>
-                <li class="menu-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-		
-	   <!--Mobile Navigation -->
-       <div class="mobile-navigation ">
-          <i class="fa fa-bars nav-toggle" id="mobile-open"></i>
-          <nav class="main-navigation" id="mobile-menu" role="navigation">
-            <span class="nav-toggle" id="mobile-close">X</span>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <ul class="social-links">
-                        <h5>Follow Me:</h5>
-                        <li><a htarget="_blank" ref="https://www.facebook.com/The.Creative.Process.Be.Creative"><i class="fa fa-facebook-official"></i></a></li>
-                        <li><a htarget="_blank" ref="https://twitter.com/RenatoFranciaC"><i class="fa fa-twitter-square"></i></a></li>
-                        <li><a htarget="_blank" ref="https://www.instagram.com/renatofrancia/"><i class="fa fa-instagram"></i></a></li>
-                        <li><a htarget="_blank" ref="https://www.linkedin.com/in/renatofrancia"><i class="fa fa-linkedin-square"></i></a></li>
-                        <li><a htarget="_blank" ref="https://github.com/rmfranciacastillo"><i class="fa fa-github-square"></i></a></li>
-                        <li><a htarget="_blank" ref="http://www.thecreativeprocess.co"><i class="fa fa-globe"></i></a></li>
-                    </ul>
-                </li>
-            </ul>
-          </nav>
-        </div>
 
-        <div class="header-content text-md-center">
-            <h1>Renato Francia</h1>
-            <p>Welcome to my little bucket of code. Here I put my current projects and talk about code.</p>
-        <a class="btn" href="#work">Try my projects</a>
-        </div>
-    </header>
 
-	<!--Section  --> 
-	<section class="section is-centered" id="services">
-        <div class="container">
-            <h2>My name is <span class="is-bold">Renato Francia</span> and I've been a professional software developer since 2012. From simple site setup in Drupal to building web applications from scratch using the MEAN stack, I'm used to work in high-paced enviroments and love every moment of it! As a tech enthusiast I always aim to improve myself which has allowed me to provide my clients with the following. </h2>
-        	<ul class="iconbox-list">
-        		<li class="iconbox-item">
-					<i class="fa fa-code"></i>
-					<h3>Front-End</h3>
-					<p>I've worked on Fron-End technologies such as Bootstrap, Foundation, CSS grid and Angular</p>
-				</li>
-        		<li class="iconbox-item">
-					<i class="fa fa-terminal"></i>
-					<h3>Back-End</h3>
-					<p>You can't have a great app without logic. I've worked on NodeJs, PHP, MySQL and MongoDB</p>
-				</li>
-        		<li class="iconbox-item">
-					<i class="fa fa-cloud"></i>
-					<h3>Deployment</h3>
-					<p>Finally, a great app needs a home to run. For this I used Heroku, AWS and Linux-based Distros</p>
-				</li>
-        	</ul>
-		</div>
-    </section>
-	
-	<!-- Section Alt-->	
-	<section class="section-alt is-centered" id="work">
-        <div class="container">
-			<h2 class="is-bold">WEB APPS</h2>
-        	<ul class="iconbox-list">
-        		<li class="iconbox-item">
-					<a target="_blank" href="/react/quotes">
-						<img src="/img/quote-logo.jpeg" alt="quote generator">
-					</a> 
-					<h3>Quote App</h3>
-					<p>A simple React + Redux app that calls an API that requests quotes and allows you to tweet the results</p>
-				</li>
-        		<li class="iconbox-item">
-					<a target="_blank" href="https://codepen.io/rmfranciacastillo/full/RWXbNj/">
-						<img src="img/calculator.jpg" alt="Calculator">
-					</a>
-					<h3>Calculator</h3>
-					<p>A simple calculator app that calculates simple operations using eval parser and VanillaJS</p>
-				</li>
-        		<li class="iconbox-item">
-					<a target="_blank" href="/games/tic-tac-toe/">
-						<img src="img/star-wars.jpg" alt="tic-tac-toe">
-					</a>
-					<h3>Star Wars Tic-Tac-Toe</h3>
-					<p>A simple Tic-Tac-Toe game with a Star Wars inspired template. Use AJAX and template views </p>
-				</li>
-        	</ul>
-		</div>
-        <div class="container">
-        	<ul class="iconbox-list">
-        		<li class="iconbox-item">
-					<a target="_blank" href="/games/flappy">
-						<img src="img/flappy.jpg" alt="Flappy Bird">
-					</a>
-					<h3>Flappy Bird</h3>
-					<p>Flappy bird clone made out of HTML5 canvas</p>
-				</li>
-        		<li class="iconbox-item">
-					<a target="_blank" href="/react/drum-machine">
-						<img src="img/drum-machine.png" alt="Drum Machine">
-					</a>
-					<h3>Drum Machine</h3>
-					<p>A drum machine built on React + Redux</p>
-				</li>
-        		<li class="iconbox-item">
-					<a target="_blank" href="/demos/wikipedia/">
-						<img src="img/wikipedia.png" alt="Wikipedia App">
-					</a>
-					<h3>Wikipedia Searcher</h3>
-					<p>A searcher using Wikipedia public API and CORS. Uses AJAX, VanillaJS</p>
-				</li>
-        	</ul>
-		</div>
-    </section>
 
-	<!-- Websites -->
-	<section class="section is-centered" id="work">
-        <div class="container">
-			<h2 class="is-bold">WEBSITES</h2>
-        	<ul class="iconbox-list">
-        		<li class="iconbox-item">
-					<a target="_blank" href="https://concordacademy.org"><img src="img/concord-academy.jpg" alt="User Profile"></a>
-					<h3>Concord Academy</h3>
-					<p>Created a page builder on WordPress 4 using Advanced Custom fields and Pods in a Custom Theme</p>
-				</li>
-        		<li class="iconbox-item">
-					<a target="_blank" href="/themes/portfolio_theme">
-						<img src="img/portfolio.png" alt="User Profile">
-					</a>
-					<h3>Portfolio Theme</h3>
-					<p>A simple portfolio theme built using CSS3, Flexbox, JQuery and Gulp for testing and automating development</p>
-				</li>
-        		<li class="iconbox-item">
-					<a target="_blank" href="/themes/portfolio_theme">
-						<img src="img/landing-page-preview.png" alt="Landing Page theme">
-					</a>
-					<h3>Landing Page Theme</h3>
-					<p>A simple Landing Page theme built using CSS3, Flexbox, CSS Grid and Gulp for testing and automating development</p>
-				</li>
 
-        	</ul>
-		</div>
-	</section>
-	
-	<!-- Section Image -->
-	<section class="section section-bg-image" id="about">
-		<div class="container">
-			<div class="l-row">
-				<div class="l-col-6">
-					<ol class="l-iconlist">
-						<li class="l-iconlist-item">
-							<i class="fa fa-list-alt"></i>
-							<div>
-								<h1 class="l-iconlist-header"><span>Step 1.</span> Planning & Strategy</h1>  
-								<p class="l-iconlist-body">My aim is to always learn about my clients business. Find what are their current pain points and setup the requirements for the project  </p>
-							</div>
-						</li>
-						<li class="l-iconlist-item">
-							<i class="fa fa-cogs"></i>
-							<div>
-								<h1 class="l-iconlist-header"><span>Step 2.</span> Implementation & Prototype</h1>  
-								<p class="l-iconlist-body">I work with prototype development approach using a Agile methodology. Once the prototype has been approved by the clients, then I start the development from the Back-End to Front-End.</p>
-							</div>
-						</li>
-						<li class="l-iconlist-item">
-							<i class="fa fa-cloud"></i>
-							<div>
-								<h1 class="l-iconlist-header"><span>Step 3.</span> Deployment & Testing</h1>  
-								<p class="l-iconlist-body">Once the app is running, I'll deploy it into Heroku/AWS with its respective databases secured. Furthermore, Unit testing will be provided to provide a high quality of code.</p>
-							</div>
-						</li>
-					</ol>
-				</div>
-				<div class="l-col-6">
-					<img class="img-responsive" src="img/phone-image.png" alt="">
-				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Websites -->
+<section class="section is-centered" id="work">
+	<div class="container">
+		<h2 class="is-bold">WEBSITES</h2>
+		<ul class="iconbox-list">
+			<li class="iconbox-item">
+				<a target="_blank" href="https://concordacademy.org"><img src="img/concord-academy.jpg" alt="User Profile"></a>
+				<h3>Concord Academy</h3>
+				<p>Created a page builder on WordPress 4 using Advanced Custom fields and Pods in a Custom Theme</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="/themes/portfolio_theme">
+					<img src="img/portfolio.png" alt="User Profile">
+				</a>
+				<h3>Portfolio Theme</h3>
+				<p>A simple portfolio theme built using CSS3, Flexbox, JQuery and Gulp for testing and automating development</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="/themes/portfolio_theme">
+					<img src="img/landing-page-preview.png" alt="Landing Page theme">
+				</a>
+				<h3>Landing Page Theme</h3>
+				<p>A simple Landing Page theme built using CSS3, Flexbox, CSS Grid and Gulp for testing and automating development</p>
+			</li>
+
+		</ul>
+	</div>
+</section>
+
+<!-- Section Image -->
+<section class="section section-bg-image" id="about">
+	<div class="container">
+		<div class="l-row">
+			<div class="l-col-6">
+				<ol class="l-iconlist">
+					<li class="l-iconlist-item">
+						<i class="fa fa-list-alt"></i>
+						<div>
+							<h1 class="l-iconlist-header"><span>Step 1.</span> Planning & Strategy</h1>  
+							<p class="l-iconlist-body">My aim is to always learn about my clients business. Find what are their current pain points and setup the requirements for the project  </p>
+						</div>
+					</li>
+					<li class="l-iconlist-item">
+						<i class="fa fa-cogs"></i>
+						<div>
+							<h1 class="l-iconlist-header"><span>Step 2.</span> Implementation & Prototype</h1>  
+							<p class="l-iconlist-body">I work with prototype development approach using a Agile methodology. Once the prototype has been approved by the clients, then I start the development from the Back-End to Front-End.</p>
+						</div>
+					</li>
+					<li class="l-iconlist-item">
+						<i class="fa fa-cloud"></i>
+						<div>
+							<h1 class="l-iconlist-header"><span>Step 3.</span> Deployment & Testing</h1>  
+							<p class="l-iconlist-body">Once the app is running, I'll deploy it into Heroku/AWS with its respective databases secured. Furthermore, Unit testing will be provided to provide a high quality of code.</p>
+						</div>
+					</li>
+				</ol>
+			</div>
+			<div class="l-col-6">
+				<img class="img-responsive" src="img/phone-image.png" alt="">
 			</div>
 		</div>
-	</section>
-	
-	<!-- Projects -->
-	<section class="section-alt is-centered" id="projects">
-        <div class="container">
-			<h2 class="is-bold">PROJECTS</h2>
-        	<ul class="iconbox-list">
-        		<li class="iconbox-item">
-					<a target="_blank" href="https://rmfranciacastillo.github.io/mit-challenge/">
-						<img src="img/mit-logo.png" alt="mit-challenge">
-					</a>
-					<h3>MIT Challenge(In Progress)</h3>
-					<p>A 12 month project where I try to take the most undergraduate courses of Computer Science from MIT by doing their projects, exams and assigments</p>
-				</li>
-        		<li class="iconbox-item">
-					<a target="_blank" href="https://www.freecodecamp.org/rmfranciacastillo">
-						<img src="img/fcc-logo.jpeg" alt="freecodecamp">
-					</a>
-					<h3>FreeCodeCamp(Finished)</h3>
-					<p>A self-paced, project based online code camp where you learn to build applications in javascript and help non-profits with your learned skill.</p>
-				</li>
-        	</ul>
-		</div>
-	</section>
-	
-	<section class="section section-bg-image-2">
-        <div class="container">
-			<h2>What Clients Say</h2>
+	</div>
+</section>
 
-			<div class="slider">
-				<input id="i1" type="radio" name="slider" checked>
-				<input id="i2" type="radio" name="slider">
-				<input id="i3" type="radio" name="slider">
-				<div id="one" class="slide">
-					<img 
-						src="/img/brian-header.jpg" 
-						alt="Brian Thopsey">
-					<h2>Brian Thopsey</h2>
-					<h6>Named Account Executive, Financial Services at Adobe</h6>
-					<blockquote>Renato and I have worked together for the past year and a half. He has been an incredible person and amazing business partner. He is always striving to help the company as a whole. He has an incredible work ethic, is reliable, and dedicated. Over his time with Fund Wisdom Renato has and continues to build the vision for our technology through which he has lead teams of developers. For these reasons, I highly recommend Renato.</blockquote>
-				</div>
-				<div id="two" class="slide">
-					<img 
-						src="/img/ben-header.jpg" 
-						alt="Slider Image">
-					<h2>Ben Carmichael</h2>
-					<h6>Director of Marketing and Communications at Concord Academy</h6>
-					<blockquote>Renato is a skilled developer who tackles every project with a positive attitude. In working on our website, he worked on a complex project, with a lot of customization. He worked tirelessly, and met all of our requests with a smile. It was a pleasure working with Renato. </blockquote>
-				</div>
-				<div id="three" class="slide">
-					<img 
-						src="https://avatars1.githubusercontent.com/u/6486733?s=460&v=4" 
-						alt="Slider Image">
-					<h2>Art Vandalay</h2>
-					<h6>Software Developer</h6>
-					<blockquote>Adipisicing quo dolorem iste alias aspernatur accusantium </blockquote>
-				</div>
-				<div class="selectors">
-					<label id="s1" class="slider-selector" for="i1"></label>
-					<label id="s2" class="slider-selector" for="i2"></label>
-					<!-- <label id="s3" class="slider-selector" for="i3"></label> -->
-				</div>
+<!-- Projects -->
+<section class="section-alt is-centered" id="projects">
+	<div class="container">
+		<h2 class="is-bold">PROJECTS</h2>
+		<ul class="iconbox-list">
+			<li class="iconbox-item">
+				<a target="_blank" href="https://rmfranciacastillo.github.io/mit-challenge/">
+					<img src="img/mit-logo.png" alt="mit-challenge">
+				</a>
+				<h3>MIT Challenge(In Progress)</h3>
+				<p>A 12 month project where I try to take the most undergraduate courses of Computer Science from MIT by doing their projects, exams and assigments</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="https://www.freecodecamp.org/rmfranciacastillo">
+					<img src="img/fcc-logo.jpeg" alt="freecodecamp">
+				</a>
+				<h3>FreeCodeCamp(Finished)</h3>
+				<p>A self-paced, project based online code camp where you learn to build applications in javascript and help non-profits with your learned skill.</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="section section-bg-image-2">
+	<div class="container">
+		<h2>What Clients Say</h2>
+
+		<div class="slider">
+			<input id="i1" type="radio" name="slider" checked>
+			<input id="i2" type="radio" name="slider">
+			<input id="i3" type="radio" name="slider">
+			<div id="one" class="slide">
+				<img 
+					src="/img/brian-header.jpg" 
+					alt="Brian Thopsey">
+				<h2>Brian Thopsey</h2>
+				<h6>Named Account Executive, Financial Services at Adobe</h6>
+				<blockquote>Renato and I have worked together for the past year and a half. He has been an incredible person and amazing business partner. He is always striving to help the company as a whole. He has an incredible work ethic, is reliable, and dedicated. Over his time with Fund Wisdom Renato has and continues to build the vision for our technology through which he has lead teams of developers. For these reasons, I highly recommend Renato.</blockquote>
 			</div>
-
+			<div id="two" class="slide">
+				<img 
+					src="/img/ben-header.jpg" 
+					alt="Slider Image">
+				<h2>Ben Carmichael</h2>
+				<h6>Director of Marketing and Communications at Concord Academy</h6>
+				<blockquote>Renato is a skilled developer who tackles every project with a positive attitude. In working on our website, he worked on a complex project, with a lot of customization. He worked tirelessly, and met all of our requests with a smile. It was a pleasure working with Renato. </blockquote>
+			</div>
+			<div id="three" class="slide">
+				<img 
+					src="https://avatars1.githubusercontent.com/u/6486733?s=460&v=4" 
+					alt="Slider Image">
+				<h2>Art Vandalay</h2>
+				<h6>Software Developer</h6>
+				<blockquote>Adipisicing quo dolorem iste alias aspernatur accusantium </blockquote>
+			</div>
+			<div class="selectors">
+				<label id="s1" class="slider-selector" for="i1"></label>
+				<label id="s2" class="slider-selector" for="i2"></label>
+				<!-- <label id="s3" class="slider-selector" for="i3"></label> -->
+			</div>
 		</div>
-	</section>
-	
-	<!--Section  --> 
-	<section class="section is-centered" id="blog">
-        <div class="container">
-        	<ul class="iconbox-list">
+
+	</div>
+</section>
+
+<!--Section  --> 
+<section class="section is-centered" id="blog">
+	<div class="container">
+		<ul class="iconbox-list">
+			
+			<li class="iconbox-item">
+				<a href="https://medium.com/@rmfranciacastillo/language-basics-comments-part-2-c1451ef253ea">
+					<img src="img/blog-post-1.jpeg" alt="User Profile">
+				</a>
+				<h3>Language Basics: Comments and documentation(Part 2)</h3>
+				<h4>Jun 07, 2018</h4>
+				<p>If you’ve been writing software for a while, you have found out that most code written by developers(yourself included) becomes exponentially complex quite easily</p>
+			</li>
+			<li class="iconbox-item">
+				<a href="https://medium.com/@rmfranciacastillo/language-basics-variables-part-1-7d9f2143bafa">
+					<img src="img/blog-post-2.jpeg" alt="User Profile">
+				</a>
+				<h3>Language Basics: Variables (Part 1)</h3>
+				<h4>March 19, 2018</h4>
+				<p>There used to be a time before 2008 where JavaScript was considered to be nothing more than a funny looking language that made HTML do some tricks and animations. </p>
 				
-				<li class="iconbox-item">
-					<a href="https://medium.com/@rmfranciacastillo/language-basics-comments-part-2-c1451ef253ea">
-						<img src="img/blog-post-1.jpeg" alt="User Profile">
-					</a>
-					<h3>Language Basics: Comments and documentation(Part 2)</h3>
-					<h4>Jun 07, 2018</h4>
-					<p>If you’ve been writing software for a while, you have found out that most code written by developers(yourself included) becomes exponentially complex quite easily</p>
-				</li>
-				<li class="iconbox-item">
-					<a href="https://medium.com/@rmfranciacastillo/language-basics-variables-part-1-7d9f2143bafa">
-						<img src="img/blog-post-2.jpeg" alt="User Profile">
-					</a>
-					<h3>Language Basics: Variables (Part 1)</h3>
-					<h4>March 19, 2018</h4>
-					<p>There used to be a time before 2008 where JavaScript was considered to be nothing more than a funny looking language that made HTML do some tricks and animations. </p>
-					
-				</li>
-				<li class="iconbox-item">
-					<a href="https://medium.com/@rmfranciacastillo/javascript-series-a-step-by-step-approach-to-useful-tips-for-the-js-f96223b6b30f?source=user_profile---------4------------------">
-						<img src="img/blog-post-3.jpeg" alt="User Profile">
-					</a>
-					<h3>JavaScript Series: A step-by-step approach to useful tips for the JS</h3>
-					<h4>March 19, 2018</h4>
-					<p>The best way to learn something is by teaching it. Nothing could be further from the truth when learning a skill....</p>
-					
-				</li>
-			</ul>
-		</div>
-    </section>
+			</li>
+			<li class="iconbox-item">
+				<a href="https://medium.com/@rmfranciacastillo/javascript-series-a-step-by-step-approach-to-useful-tips-for-the-js-f96223b6b30f?source=user_profile---------4------------------">
+					<img src="img/blog-post-3.jpeg" alt="User Profile">
+				</a>
+				<h3>JavaScript Series: A step-by-step approach to useful tips for the JS</h3>
+				<h4>March 19, 2018</h4>
+				<p>The best way to learn something is by teaching it. Nothing could be further from the truth when learning a skill....</p>
+				
+			</li>
+		</ul>
+	</div>
+</section>
 
-	<section class="section section-bg-image-3" id="contact">
-        <div class="container">
-				<div class="contact-form">
-					<h2>Have an idea? Let's connect!</h2>
-					<a	class="btn btn-main"
-						target="_blank"
-						href="https://calendly.com/rmfranciacastillo/15min/">Schedule a Meeting</a>
-				</div>
-		</div>
-	</section>
+<section class="section section-bg-image-3" id="contact">
+	<div class="container">
+			<div class="contact-form">
+				<h2>Have an idea? Let's connect!</h2>
+				<a	class="btn btn-main"
+					target="_blank"
+					href="https://calendly.com/rmfranciacastillo/15min/">Schedule a Meeting</a>
+			</div>
+	</div>
+</section>
 
-	<footer>
-		<div class="left-footer">
-			<h1>RENATO FRANCIA</h1>
-			<ul class="social-links">
-				<a href="https://codepen.io/rmfranciacastillo/"><li><i class="fa fa-codepen"></i></li></a>
-				<a href="https://github.com/rmfranciacastillo"><li><i class="fa fa-github"></i></li></a>
-				<a href="https://www.linkedin.com/in/renatofrancia/"><li><i class="fa fa-linkedin"></i></li></a>
-				<a href="https://twitter.com/RenatoFranciaC"><li><i class="fa fa-twitter"></i></li></a>
-			</ul>
-
-		</div>
-		<div class="middle-footer">
-			<h3>LATEST NEWS</h3>
-			<ul class="latest-news">
-				<li>
-					<div class="date">August 28,2018</div>
-					<p>Just released the Portfolio theme for free on github</p>
-				</li>
-				<li>
-					<div class="date">August 12,2018</div>
-					<p>Landing page theme Available on Github</p>
-				</li>
-			</ul>
-		</div>
-
-		<div class="right-footer is-text-center">
-			<h3>Let's build something awesome! </h3>
-			<br>
-			<br>
-			<a	class="btn btn-main"
-				target="_blank"
-				href="https://calendly.com/rmfranciacastillo/15min/">Schedule a Meeting</a>
-		</div>
-
-		<div class="copyright">Web Developer &copy; 2018 </div>
-	</footer>
-	
-    <script src="js/lib.min.js"></script>
-	<!-- inject:js -->
-	<script src="js/lib.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/otherjs/stuff.js"></script>
-	<!-- endinject -->
-
-
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-</body>
-</html>
