@@ -29,82 +29,42 @@ priority: 1.0
 	</div>
 </section>
 
-
-
-
-<!-- Section Alt-->	
+<!-- WebApp Section Alt-->	
 <section class="section-alt is-centered" id="work">
 	<div class="container">
 		<h2 class="is-bold">WEB APPS</h2>
 		<ul class="iconbox-list">
-			<li class="iconbox-item">
-				<a target="_blank" href="/react/quotes">
-					<img src="/img/quote-logo.jpeg" alt="quote generator">
-				</a> 
-				<h3>Quote App</h3>
-				<p>A simple React + Redux app that calls an API that requests quotes and allows you to tweet the results</p>
-			</li>
-			<li class="iconbox-item">
-				<a target="_blank" href="https://codepen.io/rmfranciacastillo/full/RWXbNj/">
-					<img src="img/calculator.jpg" alt="Calculator">
-				</a>
-				<h3>Calculator</h3>
-				<p>A simple calculator app that calculates simple operations using eval parser and VanillaJS</p>
-			</li>
-			<li class="iconbox-item">
-				<a target="_blank" href="/games/tic-tac-toe/">
-					<img src="img/star-wars.jpg" alt="tic-tac-toe">
-				</a>
-				<h3>Star Wars Tic-Tac-Toe</h3>
-				<p>A simple Tic-Tac-Toe game with a Star Wars inspired template. Use AJAX and template views </p>
-			</li>
+		{% for webapp in site.pages limit: 5 %}
+			{% if webapp.type == 'webapp' %}
+				<li class="iconbox-item">
+					<a target="_blank" href="{{ webapp.source }}">
+						<img src="{{ site.baseurl }}{{ webapp.image }}" alt="{{ webapp.image-alt }}">
+					</a> 
+					<h3>{{ webapp.title }}</h3>
+					<p>{{ webapp.meta }}</p>
+					<p>Category: <span style="font-weight: 700">{{ webapp.category }}<span></p>
+				</li>
+			{% endif %}
+		{% endfor %}
 		</ul>
 	</div>
 	<div class="container">
 		<ul class="iconbox-list">
-			<li class="iconbox-item">
-				<a target="_blank" href="/games/flappy">
-					<img src="img/flappy.jpg" alt="Flappy Bird">
-				</a>
-				<h3>Flappy Bird</h3>
-				<p>Flappy bird clone made out of HTML5 canvas</p>
-			</li>
-			<li class="iconbox-item">
-				<a target="_blank" href="/react/drum-machine">
-					<img src="img/drum-machine.png" alt="Drum Machine">
-				</a>
-				<h3>Drum Machine</h3>
-				<p>A drum machine built on React + Redux</p>
-			</li>
-			<li class="iconbox-item">
-				<a target="_blank" href="/demos/wikipedia/">
-					<img src="img/wikipedia.png" alt="Wikipedia App">
-				</a>
-				<h3>Wikipedia Searcher</h3>
-				<p>A searcher using Wikipedia public API and CORS. Uses AJAX, VanillaJS</p>
-			</li>
+		{% for webapp in site.pages limit: 3 offset: 5 %}
+			{% if webapp.type == 'webapp' %}
+				<li class="iconbox-item">
+					<a target="_blank" href="{{ webapp.source }}">
+						<img src="{{ site.baseurl }}{{ webapp.image }}" alt="{{ webapp.image-alt }}">
+					</a> 
+					<h3>{{ webapp.title }}</h3>
+					<p>{{ webapp.meta }}</p>
+					<p>Category: <span style="font-weight: 700">{{ webapp.category }}<span></p>
+				</li>
+			{% endif %}
+		{% endfor %}
 		</ul>
 	</div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- Websites -->
