@@ -37,7 +37,7 @@ priority: 1.0
 		{% for webapp in site.pages limit: 5 %}
 			{% if webapp.type == 'webapp' %}
 				<li class="iconbox-item">
-					<a target="_blank" href="{{ webapp.source }}">
+					<a target="_blank" href="webapps/{{ webapp.source }}">
 						<img src="{{ site.baseurl }}{{ webapp.image }}" alt="{{ webapp.image-alt }}">
 					</a> 
 					<h3>{{ webapp.title }}</h3>
@@ -53,7 +53,7 @@ priority: 1.0
 		{% for webapp in site.pages limit: 3 offset: 5 %}
 			{% if webapp.type == 'webapp' %}
 				<li class="iconbox-item">
-					<a target="_blank" href="{{ webapp.source }}">
+					<a target="_blank" href="webapps/{{ webapp.source }}">
 						<img src="{{ site.baseurl }}{{ webapp.image }}" alt="{{ webapp.image-alt }}">
 					</a> 
 					<h3>{{ webapp.title }}</h3>
@@ -95,6 +95,17 @@ priority: 1.0
 		</ul>
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Section Image -->
 <section class="section section-bg-image" id="about">
