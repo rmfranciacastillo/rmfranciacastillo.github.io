@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<!-- Section Image -->
+<section class="section section-bg-image" id="about">
+	<div class="container">
+		<div class="l-row">
+			<div class="l-col-6">
+				<ol class="l-iconlist">
+					<li class="l-iconlist-item">
+						<i class="fa fa-cogs"></i>
+						<div>
+							<h1 class="l-iconlist-header"><span>Project:</span> {{ page.title }}</h1>  
+							<p class="l-iconlist-body">{{ page.meta }}</p>
+							<p class="l-iconlist-body">Categories: {{ page.category }}</p>
+						</div>
+					</li>
+				</ol>
+			</div>
+			<div class="l-col-6">
+				<a href="{{site.baseurl}}/webapps/{{ page.source }}">
+				<img style="margin: 30px" src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.image-alt }}">
+				</a>
+			</div>
+		</div>
+	</div>
+</section>

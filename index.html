@@ -93,16 +93,6 @@ priority: 1.0
 	</div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
 <!-- Section Image -->
 <section class="section section-bg-image" id="about">
 	<div class="container">
@@ -139,29 +129,29 @@ priority: 1.0
 	</div>
 </section>
 
-<!-- Projects -->
+<!-- Projects Section -->
 <section class="section-alt is-centered" id="projects">
 	<div class="container">
 		<h2 class="is-bold">PROJECTS</h2>
 		<ul class="iconbox-list">
+
+		{% for project in site.projects limit: 3 %}
 			<li class="iconbox-item">
-				<a target="_blank" href="https://rmfranciacastillo.github.io/mit-challenge/">
-					<img src="img/mit-logo.png" alt="mit-challenge">
+				<a target="_blank" href="{{ project.source }}">
+					<img src="{{ site.baseurl }}{{ project.image }}" alt="{{ project.image-alt }}">
 				</a>
-				<h3>MIT Challenge(In Progress)</h3>
-				<p>A 12 month project where I try to take the most undergraduate courses of Computer Science from MIT by doing their projects, exams and assigments</p>
+				<h3>{{ project.title }}</h3>
+				<p>{{ project.meta }}</p>
 			</li>
-			<li class="iconbox-item">
-				<a target="_blank" href="https://www.freecodecamp.org/rmfranciacastillo">
-					<img src="img/fcc-logo.jpeg" alt="freecodecamp">
-				</a>
-				<h3>FreeCodeCamp(Finished)</h3>
-				<p>A self-paced, project based online code camp where you learn to build applications in javascript and help non-profits with your learned skill.</p>
-			</li>
+		{% endfor %}
+
 		</ul>
 	</div>
 </section>
 
+
+
+<!-- Testimonials -->
 <section class="section section-bg-image-2">
 	<div class="container">
 		<h2>What Clients Say</h2>
@@ -203,6 +193,11 @@ priority: 1.0
 
 	</div>
 </section>
+
+
+
+
+
 
 <!--Section  --> 
 <section class="section is-centered" id="blog">
