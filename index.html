@@ -76,30 +76,22 @@ priority: 1.0
 	<div class="container">
 		<h2 class="is-bold">WEBSITES</h2>
 		<ul class="iconbox-list">
+		{% for website in site.websites limit: 3 %}
 			<li class="iconbox-item">
-				<a target="_blank" href="https://concordacademy.org"><img src="img/concord-academy.jpg" alt="User Profile"></a>
-				<h3>Concord Academy</h3>
-				<p>Created a page builder on WordPress 4 using Advanced Custom fields and Pods in a Custom Theme</p>
-			</li>
-			<li class="iconbox-item">
-				<a target="_blank" href="/themes/portfolio_theme">
-					<img src="img/portfolio.png" alt="User Profile">
+				{% if website.source-type == 'link' %}
+				<a target="_blank" href="{{ website.source }}">
+				{% else %}
+				<a target="_blank" href="{{ site.baseurl }}{{ website.source }}">
+				{% endif %}
+					<img src="{{ site.baseurl }}{{ website.image }}" alt="{{ website.image-alt }}">
 				</a>
-				<h3>Portfolio Theme</h3>
-				<p>A simple portfolio theme built using CSS3, Flexbox, JQuery and Gulp for testing and automating development</p>
+				<h3>{{ website.title }}</h3>
+				<p>{{ website.meta }}</p>
 			</li>
-			<li class="iconbox-item">
-				<a target="_blank" href="/themes/portfolio_theme">
-					<img src="img/landing-page-preview.png" alt="Landing Page theme">
-				</a>
-				<h3>Landing Page Theme</h3>
-				<p>A simple Landing Page theme built using CSS3, Flexbox, CSS Grid and Gulp for testing and automating development</p>
-			</li>
-
+		{% endfor %}
 		</ul>
 	</div>
 </section>
-
 
 
 
