@@ -81,7 +81,7 @@ priority: 1.0
 				{% if website.source-type == 'link' %}
 				<a target="_blank" href="{{ website.source }}">
 				{% else %}
-				<a target="_blank" href="{{ site.baseurl }}{{ website.source }}">
+				<a target="_blank" href="{{ site.baseurl }}/websites/{{ website.source }}">
 				{% endif %}
 					<img src="{{ site.baseurl }}{{ website.image }}" alt="{{ website.image-alt }}">
 				</a>
