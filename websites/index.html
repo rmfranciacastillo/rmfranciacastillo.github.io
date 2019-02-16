@@ -1,0 +1,92 @@
+---
+layout: websites
+title: Websites Themes
+---
+
+<!-- Websites -->
+<section class="section is-centered" id="work">
+
+	<div class="container">
+		<h2 class="is-bold">WEBSITES</h2>
+		<ul class="iconbox-list">
+		{% for website in site.pages limit: 3 %}
+			{%  if website.type == 'website' %}
+			<li class="iconbox-item">
+				<a target="_blank" href="{{ source }}">
+					<img src="{{ site.baseurl }}{{ website.image }}" alt="{{ website.image-alt }}">
+				</a>
+				<h3>{{ website.title }}</h3>
+				<p>{{ website.meta }}</p>
+			</li>
+			{% endif %}
+		{% endfor %}
+
+
+			<li class="iconbox-item">
+				<a target="_blank" href="/themes/portfolio_theme">
+					<img src="{{ site.baseurl }}/img/portfolio.png" alt="User Profile">
+				</a>
+				<h3>Portfolio Theme</h3>
+				<p>A simple portfolio theme built using CSS3, Flexbox, JQuery and Gulp for testing and automating development</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="/themes/web-developer-landing-page">
+					<img src="{{ site.baseurl }}/img/landing-page-preview.png" alt="Landing Page theme">
+				</a>
+				<h3>Landing Page Theme</h3>
+				<p>A simple Landing Page theme built using CSS3, Flexbox, CSS Grid and Gulp for testing and automating development</p>
+			</li>
+
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="container">
+		<h2 class="is-bold">WEBSITES</h2>
+		<ul class="iconbox-list">
+
+			<li class="iconbox-item">
+				<a target="_blank" href="https://concordacademy.org">
+					<img src="{{ site.baseurl }}/img/concord-academy.jpg" alt="Profile">
+				</a>
+				<h3>Concord Academy</h3>
+				<p>Created a page builder on WordPress 4 using Advanced Custom fields and Pods in a Custom Theme</p>
+			</li>
+
+			<li class="iconbox-item">
+				<a target="_blank" href="/themes/portfolio_theme">
+					<img src="{{ site.baseurl }}/img/portfolio.png" alt="User Profile">
+				</a>
+				<h3>Portfolio Theme</h3>
+				<p>A simple portfolio theme built using CSS3, Flexbox, JQuery and Gulp for testing and automating development</p>
+			</li>
+			<li class="iconbox-item">
+				<a target="_blank" href="/themes/web-developer-landing-page">
+					<img src="{{ site.baseurl }}/img/landing-page-preview.png" alt="Landing Page theme">
+				</a>
+				<h3>Landing Page Theme</h3>
+				<p>A simple Landing Page theme built using CSS3, Flexbox, CSS Grid and Gulp for testing and automating development</p>
+			</li>
+
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+

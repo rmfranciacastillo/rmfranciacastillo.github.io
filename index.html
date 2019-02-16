@@ -34,38 +34,42 @@ priority: 1.0
 	<div class="container">
 		<h2 class="is-bold">WEB APPS</h2>
 		<ul class="iconbox-list">
-		{% for webapp in site.pages limit: 5 %}
-			{% if webapp.type == 'webapp' %}
-				<li class="iconbox-item">
-					<a target="_blank" href="webapps/{{ webapp.source }}">
-						<img src="{{ site.baseurl }}{{ webapp.image }}" alt="{{ webapp.image-alt }}">
-					</a> 
-					<h3>{{ webapp.title }}</h3>
-					<p>{{ webapp.meta }}</p>
-					<p>Category: <span style="font-weight: 700">{{ webapp.category }}<span></p>
-				</li>
-			{% endif %}
+
+		{% for webapp in site.webapps limit: 3 %}
+			<li class="iconbox-item">
+				{% if webapp.source-type == 'link' %}
+				<a target="_blank" href="{{ webapp.source }}">
+				{% else %}
+				<a target="_blank" href="{{ site.baseurl}}/webapps/{{ webapp.source }}">
+				{% endif%}
+					<img src="{{ site.baseurl }}{{ webapp.image }}" alt="{{ webapp.image-alt }}">
+				</a> 
+				<h3>{{ webapp.title }}</h3>
+				<p>{{ webapp.meta }}</p>
+				<p>Category: <span style="font-weight: 700">{{ webapp.category }}<span></p>
+			</li>
 		{% endfor %}
 		</ul>
 	</div>
 	<div class="container">
 		<ul class="iconbox-list">
-		{% for webapp in site.pages limit: 3 offset: 5 %}
-			{% if webapp.type == 'webapp' %}
-				<li class="iconbox-item">
-					<a target="_blank" href="webapps/{{ webapp.source }}">
-						<img src="{{ site.baseurl }}{{ webapp.image }}" alt="{{ webapp.image-alt }}">
-					</a> 
-					<h3>{{ webapp.title }}</h3>
-					<p>{{ webapp.meta }}</p>
-					<p>Category: <span style="font-weight: 700">{{ webapp.category }}<span></p>
-				</li>
-			{% endif %}
+		{% for webapp in site.webapps limit: 3 offset: 3 %}
+			<li class="iconbox-item">
+				{% if webapp.source-type == 'link' %}
+				<a target="_blank" href="{{ webapp.source }}">
+				{% else %}
+				<a target="_blank" href="{{ site.baseurl}}/webapps/{{ webapp.source }}">
+				{% endif%}
+					<img src="{{ site.baseurl }}{{ webapp.image }}" alt="{{ webapp.image-alt }}">
+				</a> 
+				<h3>{{ webapp.title }}</h3>
+				<p>{{ webapp.meta }}</p>
+				<p>Category: <span style="font-weight: 700">{{ webapp.category }}<span></p>
+			</li>
 		{% endfor %}
 		</ul>
 	</div>
 </section>
-
 
 <!-- Websites -->
 <section class="section is-centered" id="work">
