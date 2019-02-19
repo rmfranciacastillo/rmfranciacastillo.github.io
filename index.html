@@ -149,8 +149,6 @@ priority: 1.0
 	</div>
 </section>
 
-
-
 <!-- Testimonials -->
 <section class="section section-bg-image-2">
 	<div class="container">
@@ -194,42 +192,22 @@ priority: 1.0
 	</div>
 </section>
 
-
-
-
-
-
 <!--Section  --> 
 <section class="section is-centered" id="blog">
 	<div class="container">
 		<ul class="iconbox-list">
-			
+			{% assign sorted = (site.posts | sort: 'date') | reverse %}
+			{% for post in site.posts limit: 3 %}
 			<li class="iconbox-item">
-				<a href="https://medium.com/@rmfranciacastillo/language-basics-comments-part-2-c1451ef253ea">
-					<img src="img/blog-post-1.jpeg" alt="User Profile">
+				<a href="{{ post.link  }}">
+					<img src="{{ post.image }}" alt="{{ post.image-alt }}">
 				</a>
-				<h3>Language Basics: Comments and documentation(Part 2)</h3>
-				<h4>Jun 07, 2018</h4>
-				<p>If you’ve been writing software for a while, you have found out that most code written by developers(yourself included) becomes exponentially complex quite easily</p>
+				<h3>{{ post.title }}</h3>
+				<h4>{{ post.date | date: "%-d %B %Y" }}</h4>
+				<p>{{ post.meta }}</p>
 			</li>
-			<li class="iconbox-item">
-				<a href="https://medium.com/@rmfranciacastillo/language-basics-variables-part-1-7d9f2143bafa">
-					<img src="img/blog-post-2.jpeg" alt="User Profile">
-				</a>
-				<h3>Language Basics: Variables (Part 1)</h3>
-				<h4>March 19, 2018</h4>
-				<p>There used to be a time before 2008 where JavaScript was considered to be nothing more than a funny looking language that made HTML do some tricks and animations. </p>
-				
-			</li>
-			<li class="iconbox-item">
-				<a href="https://medium.com/@rmfranciacastillo/javascript-series-a-step-by-step-approach-to-useful-tips-for-the-js-f96223b6b30f?source=user_profile---------4------------------">
-					<img src="img/blog-post-3.jpeg" alt="User Profile">
-				</a>
-				<h3>JavaScript Series: A step-by-step approach to useful tips for the JS</h3>
-				<h4>March 19, 2018</h4>
-				<p>The best way to learn something is by teaching it. Nothing could be further from the truth when learning a skill....</p>
-				
-			</li>
+			{% endfor %}
+
 		</ul>
 	</div>
 </section>

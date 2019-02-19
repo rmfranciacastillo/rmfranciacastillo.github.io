@@ -12,14 +12,15 @@
 	<div class="middle-footer">
 		<h3>LATEST NEWS</h3>
 		<ul class="latest-news">
+		{% assign sorted = (site.posts | sort: 'date') | reverse %}
+		{% for post in site.posts limit: 3 %}
 			<li>
-				<div class="date">August 28,2018</div>
-				<p>Just released the Portfolio theme for free on github</p>
+				<div class="date">{{ post.date | date: "%-d %B %Y" }}</div>
+				<a href={{ post.link }}>
+					<p>{{ post.title}}</p>
+				</a>
 			</li>
-			<li>
-				<div class="date">August 12,2018</div>
-				<p>Landing page theme Available on Github</p>
-			</li>
+		{% endfor %}
 		</ul>
 	</div>
 

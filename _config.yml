@@ -17,10 +17,7 @@ collections:
         output: true
         permalink: /projects/:path
 
-    clients:
+    testimonials:
         output: true
-        permalink: /clients/:path
+        permalink: /testimonials/:path
 
-    blog:
-        output: true
-        permalink: /blog/:path
